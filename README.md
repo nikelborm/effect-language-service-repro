@@ -12,6 +12,4 @@ cd effect-language-service-repro/
 # possible warning of mise could be ignored
 bun install --frozen-lockfile
 code . ./index.ts
-# set cursor after `import Effect`
-# press Ctrl+Space to show autocompletion
 ```
