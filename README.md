@@ -4,7 +4,7 @@ Copy-paste reproduction template:
 
 ```bash
 # CHANGE ME
-BRANCH_NAME=main
+BRANCH_NAME="main"
 
 cd $(mktemp -d)
 git clone --depth 1 -b $BRANCH_NAME git@github.com:nikelborm/effect-language-service-repro.git
