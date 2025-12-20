@@ -65,13 +65,6 @@
     "noStrictGenericChecks": false,
     "plugins": [
       {
-        "name": "ts-namespace-import",
-        "options": {
-          "capitalizedFilesOnly": true,
-          "nameTransform": "PascalCase"
-        }
-      },
-      {
         "name": "@effect/language-service",
         "diagnostics": true,
         "diagnosticSeverity": {
