@@ -1,15 +1,17 @@
-# effect-language-service-repro
+# Effect language service reproduction repo
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
+Copy-paste reproduction template:
 
 ```bash
-bun run index.ts
-```
+# CHANGE ME
+BRANCH_NAME=main
 
-This project was created using `bun init` in bun v1.3.3. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+cd $(mktemp -d)
+git clone --depth 1 -b $BRANCH_NAME git@github.com:nikelborm/effect-language-service-repro.git
+cd effect-language-service-repro/
+# possible warning of mise could be ignored
+bun install --frozen-lockfile
+code . ./index.ts
+# set cursor after `import Effect`
+# press Ctrl+Space to show autocompletion
+```
