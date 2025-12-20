@@ -65,8 +65,7 @@ export const actOnEntity = <
 
   // type Success = Registry
 
-  // type Failure = [
-  //   | RegistryAcquirementError
+  // type Failure = RegistryAcquirementError | [
   //   | YieldWrap<Effect<
   //     Entity<TEntityTypeReturnedFromRegistry>,
   //     EntityAcquirementError,
@@ -79,8 +78,7 @@ export const actOnEntity = <
   //   >>
   // ] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never
 
-  // type Requirements = [
-  //   | RegistryAcquirementRequirements
+  // type Requirements = RegistryAcquirementRequirements | [
   //   | YieldWrap<Effect<
   //     Entity<TEntityTypeReturnedFromRegistry>,
   //     EntityAcquirementError,
