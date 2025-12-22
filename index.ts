@@ -65,31 +65,43 @@ export const actOnEntity = <
 
   // type Success = Registry
 
-  // type Failure = RegistryAcquirementError | [
-  //   | YieldWrap<Effect<
-  //     Entity<TEntityTypeReturnedFromRegistry>,
-  //     EntityAcquirementError,
-  //     EntityAcquirementRequirements
-  //   >>
-  //   | YieldWrap<Effect<
-  //     Entity<TEntityTypeSupportedInActing>,
-  //     ActingError,
-  //     ActingRequirements
-  //   >>
-  // ] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never
+  // type Failure =
+  //   | RegistryAcquirementError
+  //   | (
+  //     [
+  //       | YieldWrap<Effect<
+  //         Entity<TEntityTypeReturnedFromRegistry>,
+  //         EntityAcquirementError,
+  //         EntityAcquirementRequirements
+  //       >>
+  //       | YieldWrap<Effect<
+  //         Entity<TEntityTypeSupportedInActing>,
+  //         ActingError,
+  //         ActingRequirements
+  //       >>
+  //     ] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>]
+  //       ? E
+  //       : never
+  //   )
 
-  // type Requirements = RegistryAcquirementRequirements | [
-  //   | YieldWrap<Effect<
-  //     Entity<TEntityTypeReturnedFromRegistry>,
-  //     EntityAcquirementError,
-  //     EntityAcquirementRequirements
-  //   >>
-  //   | YieldWrap<Effect<
-  //     Entity<TEntityTypeSupportedInActing>,
-  //     ActingError,
-  //     ActingRequirements
-  //   >>
-  // ] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never
+  // type Requirements =
+  //   | RegistryAcquirementRequirements
+  //   | (
+  //     [
+  //       | YieldWrap<Effect<
+  //         Entity<TEntityTypeReturnedFromRegistry>,
+  //         EntityAcquirementError,
+  //         EntityAcquirementRequirements
+  //       >>
+  //       | YieldWrap<Effect<
+  //         Entity<TEntityTypeSupportedInActing>,
+  //         ActingError,
+  //         ActingRequirements
+  //       >>
+  //     ] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>]
+  //       ? R
+  //       : never
+  //   )
 
   const target3 = Effect.gen(function*() {
     yield* registryEffect
