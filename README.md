@@ -3,7 +3,6 @@
 Copy-paste reproduction template:
 
 ```bash
-# CHANGE ME
 BRANCH_NAME="quickinfo-unresolved-yieldwraps"
 
 cd $(mktemp -d)
