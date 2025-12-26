@@ -13,3 +13,11 @@ cd effect-language-service-repro/
 bun install --frozen-lockfile
 code . ./index.ts
 ```
+
+To unshallow the repo and get access to all other branches:
+
+```bash
+git fetch --unshallow
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git fetch --all
+```
