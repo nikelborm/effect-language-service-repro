@@ -3,7 +3,7 @@
 Copy-paste reproduction template:
 
 ```bash
-BRANCH_NAME="!!CHANGE ME!!"
+BRANCH_NAME="bad-namespace-import-on-first-line"
 
 cd $(mktemp -d)
 git clone --depth 1 -b $BRANCH_NAME git@github.com:nikelborm/effect-language-service-repro.git
