@@ -28,6 +28,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "outDir": "./dist",
+    "baseUrl": "./",
     "declaration": true,
     "declarationMap": true,
     // they'll be removed by bundler if needed
