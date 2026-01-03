@@ -27,6 +27,7 @@
     "noImplicitReturns": true,
     "esModuleInterop": true,
     "isolatedModules": true,
+    "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
     // they'll be removed by bundler if needed
@@ -72,6 +73,7 @@
         },
         "quickinfo": true,
         "completions": true,
+        "reportSuggestionsAsWarningsInTsc": true,
         "multipleEffectCheck": true,
         "transform": "@effect/language-service/transform",
         "namespaceImportPackages": ["effect", "@effect/*"],
@@ -87,5 +89,6 @@
         "importAliases": { "Array": "EArray", "String": "EString" }
       }
     ]
-  }
+  },
+  "include": ["./index.ts"]
 }

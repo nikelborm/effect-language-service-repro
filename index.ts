@@ -1,1 +1,1 @@
-import Effect from 'effect/Effect'
+import * as Effect from "effect/Effect"
