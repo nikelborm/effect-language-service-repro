@@ -63,15 +63,17 @@
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
     "noStrictGenericChecks": false,
+    "outDir": "./dist",
     "plugins": [
       {
         "name": "@effect/language-service",
         "diagnostics": true,
         "diagnosticSeverity": {
-          "deterministicKeys": "error"
+          "deterministicKeys": "error",
         },
         "quickinfo": true,
         "completions": true,
+        "reportSuggestionsAsWarningsInTsc": true,
         "multipleEffectCheck": true,
         "transform": "@effect/language-service/transform",
         "namespaceImportPackages": ["effect", "@effect/*"],
@@ -87,5 +89,6 @@
         "importAliases": { "Array": "EArray", "String": "EString" }
       }
     ]
-  }
+  },
+  "include": ["./index.ts"]
 }
