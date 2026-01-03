@@ -64,16 +64,18 @@
     "suppressImplicitAnyIndexErrors": false,
     "noStrictGenericChecks": false,
     "outDir": "./dist",
+    "baseUrl": "./",
     "plugins": [
       {
         "name": "@effect/language-service",
         "diagnostics": true,
         "diagnosticSeverity": {
           "deterministicKeys": "error",
+          "unnecessaryPipe": "warning"
         },
         "quickinfo": true,
-        "completions": true,
         "reportSuggestionsAsWarningsInTsc": true,
+        "completions": true,
         "multipleEffectCheck": true,
         "transform": "@effect/language-service/transform",
         "namespaceImportPackages": ["effect", "@effect/*"],
@@ -90,5 +92,5 @@
       }
     ]
   },
-  "include": ["./index.ts"]
+  "include": ["./*.ts"]
 }
