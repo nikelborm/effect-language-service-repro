@@ -8,7 +8,7 @@
   "dependencies": {
     "@effect/language-service": "^0.65.0",
     "@types/bun": "^1.3.6",
-    "effect": "3.19.14",
+    "effect": "3.20.0",
     "ts-patch": "^3.3.0",
     "typescript": "^5.9.3"
   }
