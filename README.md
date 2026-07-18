@@ -7,7 +7,7 @@ Copy-paste reproduction template:
 BRANCH_NAME="main"
 
 cd $(mktemp -d)
-git clone --depth 1 -b $BRANCH_NAME git@github.com:nikelborm/effect-language-service-repro.git
+git clone --depth 1 -b $BRANCH_NAME https://github.com/nikelborm/effect-language-service-repro.git
 cd effect-language-service-repro/
 # possible warning of mise could be ignored
 bun install --frozen-lockfile
