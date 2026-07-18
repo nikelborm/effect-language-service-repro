@@ -6,7 +6,7 @@ Copy-paste reproduction template:
 BRANCH_NAME="bad-namespace-import-on-first-line"
 
 cd $(mktemp -d)
-git clone --depth 1 -b $BRANCH_NAME git@github.com:nikelborm/effect-language-service-repro.git
+git clone --depth 1 -b $BRANCH_NAME https://github.com/nikelborm/effect-language-service-repro.git
 cd effect-language-service-repro/
 
 # Possible warning of mise could be ignored, because `mise` is not needed for reproduction.
